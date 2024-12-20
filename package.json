@@ -4,7 +4,7 @@
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "parcel build src/index.html",
+        "start": "npm-run-all clean parcel:dev",
         "build": "npm-run-all clean parcel:build",
         "parcel:dev": "parcel",
         "parcel:build": "parcel build",
@@ -19,6 +19,7 @@
         "sharp": "^0.33.5"
     },
     "dependencies": {
+        "@parcel/optimizer-svgo": "^2.13.3",
         "grunt-autoprefixer": "^3.0.4",
         "grunt-cli": "^1.5.0",
         "grunt-contrib-watch": "^1.1.0",

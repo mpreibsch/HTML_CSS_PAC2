@@ -22,6 +22,7 @@
         "grunt-autoprefixer": "^3.0.4",
         "grunt-cli": "^1.5.0",
         "grunt-contrib-watch": "^1.1.0",
+        "svgo": "^3.3.2",
         "sweetalert2": "^11.14.5"
     },
     "targets": {

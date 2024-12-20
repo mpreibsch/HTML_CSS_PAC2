@@ -3,7 +3,8 @@
     "source": "src/index.html",
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
-        "start": "npm-run-all clean parcel:dev",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel build src/index.html",
         "build": "npm-run-all clean parcel:build",
         "parcel:dev": "parcel",
         "parcel:build": "parcel build",
@@ -27,5 +28,9 @@
         "default": {
             "publicUrl": "./"
         }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mpreibsch/HTML_CSS_PAC2.git"
     }
 }

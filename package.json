@@ -14,7 +14,8 @@
         "npm-run-all": "^4.1.5",
         "parcel": "^2.12.0",
         "posthtml-include": "^2.0.1",
-        "rimraf": "^6.0.1"
+        "rimraf": "^6.0.1",
+        "sharp": "^0.31.3"
     },
     "dependencies": {
         "grunt-autoprefixer": "^3.0.4",

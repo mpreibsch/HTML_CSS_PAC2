@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Detall del dia 1 de la ruta">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="app.js"></script>  
+    <script defer type="module" src="app.js"></script>  
   </head>
 <body>
 <include src="src/header.html"></include>
@@ -38,7 +38,7 @@
         <picture>
             <source media="(max-width:768px)" srcset="img/lleopard-da-m.jpg" width="350px">
             <source media="(max-width:992px)" srcset="img/lleopard-da-l.jpg" width="425px">
-            <img  class="fotodetall" src="img/lleopard-xl.jpg" width="500px" alt="Lleopard de les neus del Parc Nordens Ark"/>
+            <img  class="fotodetall" src="img/lleopard-xl.jpg" width="500px" alt="Lleopard de les neus del Parc Nordens Ark" loading="lazy"/>
            </picture>
         <figcaption class="peufoto">
             Lleopard de les neus del Parc Nordens Ark
@@ -47,7 +47,7 @@
             Camina pels camins naturals del parc, observa els animals en entorns semblants als seus hàbitats naturals i descobreix la importància de la biodiversitat.
         </p>
         <img class="fotodetall" srcset="img/carousel2-s.jpg 400w, img/carousel2-m.jpg 600w, img/carousel2-l.jpg 800w, img/carousel2-xl.jpg 1000w" 
-        src="img/carousel2-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Animals en el seu hàbitat al Parc Nordens Ark"/>        
+        src="img/carousel2-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Animals en el seu hàbitat al Parc Nordens Ark" loading="lazy"/>        
         <figcaption class="peufoto">
             Animals en el seu hàbitat al Parc Nordens Ark
         </figcaption>

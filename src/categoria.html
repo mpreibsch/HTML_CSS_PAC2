@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explicació de la ruta">
     <link rel="stylesheet" href="styles.css">
-    <script defer type="module" src="app.js"></script>
- 
+    <script async type="module" src="app.js"></script>
+    <script async type="module" src="sweeta.js"></script>
     </head>
 <body>
   <include src="src/header.html"></include>
@@ -19,8 +19,8 @@
         És molt difícil fer una tria, però hem pensat en una ruta que et faci descobrir aquesta zona i potser et donarà ganes de tornar-hi en una altra ocasió.
       </p>
       <div class="mapa">
-      <img srcset="img/mapa-s.png 400w, img/mapa-m.png 600w, img/mapa.png 800w" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px"
-      src="img/mapa.png" alt="Mapa de la ruta"/>
+      <img srcset="img/mapa-s.png?as=webp 400w, img/mapa-m.png?as=webp 600w, img/mapa.png?as=webp 800w" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px"
+      src="img/mapa.png?as=webp" alt="Mapa de la ruta"/>
     </div>  
       <p class="rutap">
           És una ruta que pots fer sol, en parella, amb amics o en família.
@@ -28,23 +28,23 @@
         </p>
       <ol class="ruta">
         <li>
-          <a href="marstrand.html"><img srcset="img/marstrand-da-s.jpg, img/marstrand-da-m.jpg 1.5x, img/marstrand-da-l.jpg 2x" 
-          src="img/marstrand-da-l.jpg" alt="Marstrand" loading="lazy"></a>
+          <a href="marstrand.html"><img srcset="img/marstrand-da-s.jpg?as=webp, img/marstrand-da-m.jpg?as=webp 1.5x, img/marstrand-da-l.jpg?as=webp 2x" 
+          src="img/marstrand-da-l.jpg?as=webp" width="80px" height="auto" alt="Marstrand" loading="lazy"></a>
           <p><a href="marstrand.html">Dia 1: Marstrand i parc d'animals Nordens Ark</a></p>
         </li>
         <li>
-          <a href="smoegen.html"><img srcset="img/categoria-da-s.jpg, img/categoria-da-m.jpg 1.5x, img/categoria-da-l.jpg 2x" 
-          src="img/categoria-da-l.jpg"  alt="Smögen" loading="lazy"></a>
+          <a href="smoegen.html"><img srcset="img/categoria-da-s.jpg?as=webp, img/categoria-da-m.jpg?as=webp 1.5x, img/categoria-da-l.jpg?as=webp 2x" 
+          src="img/categoria-da-l.jpg?as=webp" width="80px" height="auto" alt="Smögen" loading="lazy"></a>
           <p><a href="smoegen.html">Dia 2: Smögen</a></p>
         </li>
         <li>
-          <a href="fjallbacka.html"><img srcset="img/fjallbacka1-da-s.jpg, img/fjallbacka1-da-m.jpg 1.5x, img/fjallbacka1-da-l.jpg 2x" 
-          src="img/fjallbacka1-da-l.jpg"  alt="Fjällbacka" loading="lazy"></a>
+          <a href="fjallbacka.html"><img srcset="img/fjallbacka1-da-s.jpg?as=webp, img/fjallbacka1-da-m.jpg?as=webp 1.5x, img/fjallbacka1-da-l.jpg?as=webp 2x" 
+          src="img/fjallbacka1-da-l.jpg?as=webp" width="80px" height="auto" alt="Fjällbacka" loading="lazy"></a>
           <p><a href="fjallbacka.html">Dia 3: Fjällbacka i el museu Vitlycke</a></p>
         </li>
         <li>
-          <a href="stroemstad.html"><img srcset="img/safari-da-s.jpg, img/safari-da-m.jpg 1.5x, img/safari-da-l.jpg 2x" 
-          src="img/safari-da-l.jpg"  alt="Safari de foques" loading="lazy"></a>
+          <a href="stroemstad.html"><img srcset="img/safari-da-s.jpg?as=webp, img/safari-da-m.jpg?as=webp 1.5x, img/safari-da-l.jpg?as=webp 2x" 
+          src="img/safari-da-l.jpg?as=webp" width="80px" height="auto" alt="Safari de foques" loading="lazy"></a>
           <p><a href="stroemstad.html">Dia 4 i 5: Strömstad i safari de foques a les illes Koster</a>
         </li>
       </ol>
@@ -71,7 +71,7 @@
       </li>
     </ul>
     </form>
-    <button type="submit" class="enviar" id="boto">Enviar</button>
+    <button type="submit" class="enviar" id="boto" name="botó enviar">Enviar</button>
    </main>
       <include src="src/footer.html"></include>
 </body>

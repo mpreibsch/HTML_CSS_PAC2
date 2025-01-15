@@ -10,7 +10,7 @@
 /*Dispositius grants*/ 
 
   body{
-    background-color: #f8fad0;
+    background-color: #fcf9e4;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
@@ -19,10 +19,10 @@
   }
 
   h1{
-    color: #fecc00;
+    color: #e8ae29;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     padding-top: 60px;
     margin-bottom: 40px;
     margin-left:15%;
@@ -32,7 +32,7 @@
 /*Header*/
 
   header{
-    background-image: url(img/header-l.jpg);
+    background-image: url(img/header-l.jpg?as=webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 275px;
@@ -66,8 +66,9 @@
 
   .menulogo{
     height:40px;
-    width: 45px;
+    width: 40px;
     cursor: pointer;
+    
 }
 
 .menú{
@@ -88,7 +89,7 @@
   font-size: 1rem;
   font-weight: bold;
   color:#160152;
-  background-color: #fecc00;
+  background-color: #e8ae29;
   padding: 0.2rem 0.35rem;
   border-radius: 50%;
   border-color: #160152;
@@ -111,18 +112,19 @@
 
 .menú ul li a{
   text-decoration: none;
-  color:#fecc00;
+  color: #e8ae29;
 }
 
 .menú ul li a:hover{
   text-decoration: underline;
-  color:#fecc00;
+  color:#fcf9e4;
 }
 
 /*Footer*/
 
   footer{
-    background-image: url(img/footer-l.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
+    url(img/footer-l.jpg?as=webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 275px;
@@ -131,8 +133,44 @@
     padding-left: 0;
     padding-right: 0;
     display: flex;
+    }
+
+  .footer{
+    display:grid;
+    grid-template-columns: 30vw 40vw 30vw;
     align-items: center;
     justify-content: center;
+  }
+
+  .logof{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logof img{
+    width:100px;
+    height: auto;
+    text-align: start;
+  }
+
+  .navf{
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pf{
+    grid-column-start: 3;
+    align-items: right;
+    justify-content: center;
+    }
+
+  .pf p{
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
   }
 
   .footer nav li{
@@ -140,15 +178,16 @@
     margin-top: 20px;
     font-size:1.1rem;
     list-style: none;
-  }
+    }
 
   .footer nav li a{
     text-decoration: none;
-    color:#fecc00;
+    color:#160152;
   }
 
   .footer nav li a:hover{
     color:#160152;
+    text-decoration: underline;
   }
 
 /*index.html*/
@@ -182,7 +221,7 @@
   }
 
   .index a:hover{
-    color: #fecc00;
+    color: #e8ae29;
   }
 
   .fotoindex1{
@@ -240,8 +279,6 @@
   }
 
   .ruta img{
-    width:80px;
-    height: auto;
     border-radius: 50%;
     margin-bottom: 40px;
     position: absolute;
@@ -268,7 +305,7 @@
   }
 
   .ruta a:hover{
-    color: #fecc00;
+    color: #e8ae29;
   }
 
   form ul{
@@ -290,6 +327,10 @@
     margin-top: 30px;
     margin-bottom: 90px;
     cursor: pointer;
+  }
+
+  .enviar:hover{
+    color:#fcf9e4;
   }
 
 /*Pàgines de detall*/
@@ -349,7 +390,7 @@
   }
 
   .museu:hover{
-    color:#fecc00;
+    color:#e8ae29;
   }
 
   /*presentacio.html*/
@@ -432,7 +473,7 @@
   }
 
   .museuenllaç li a:hover{
-    color:#fecc00;
+    color:#e8ae29;
     text-decoration: underline;
   }
   
@@ -466,7 +507,7 @@ p, .intro, article p{
 /*Header*/
 
 header{
-  background-image: url(img/header-m.jpg);
+  background-image: url(img/header-m.jpg?as=webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 250px;
@@ -495,10 +536,23 @@ header{
 /*Footer*/
 
 footer{
-  background-image: url(img/footer-m.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
+  url(img/footer-m.jpg?as=webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 250px;
+}
+
+.footer{
+  grid-template-columns: 30vw 38vw 30vw;
+}
+
+.logof img{
+  width:80px;
+}
+
+.pf{
+  margin-right: 20px;
 }
 
 /*index.html*/
@@ -527,10 +581,6 @@ footer{
 .ruta{
   margin-left: 20%; 
 }
-
-/*.ruta img{
-  width: 75px;
-}*/
 
 .ruta p{
   margin-left: 90px;
@@ -622,7 +672,7 @@ article p{
 /*Header*/
 
 header{
-  background-image: url(img/header-s.jpg);
+  background-image: url(img/header-s.jpg?as=webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
@@ -641,7 +691,7 @@ header{
 
   .menulogo{
     height:25px;
-    width: 30px;
+    width: 25px;
     }
 
 .menú{
@@ -662,16 +712,29 @@ header{
 /*Footer*/
 
 footer{
-  background-image: url(img/footer-s.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
+  url(img/footer-s.jpg?as=webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
+}
+
+.logof img{
+  width:60px;
+}
+
+.footer{
+  grid-template-columns: 30vw 36vw 30vw;
 }
 
 .footer nav li{
   margin-bottom: 10px;
   margin-top: 10px;
   font-size:0.9rem;
+}
+
+.pf p{
+  font-size: 0.7rem;
 }
 
 /*index.html*/

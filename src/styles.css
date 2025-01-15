@@ -10,7 +10,7 @@
 /*Dispositius grants*/ 
 
   body{
-    background-color: #fcf9e4;
+    background-color: #fcfbf4;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
@@ -99,6 +99,10 @@
   cursor:pointer;
   }
 
+  .tancar-menu button:hover{
+    background-color: #fcfbf4;
+  }
+
 .menú ul{
   list-style: none;
   display:flex;
@@ -117,7 +121,7 @@
 
 .menú ul li a:hover{
   text-decoration: underline;
-  color:#fcf9e4;
+  color:#fcfbf4;
 }
 
 /*Footer*/
@@ -330,7 +334,7 @@
   }
 
   .enviar:hover{
-    color:#fcf9e4;
+    color:#fcfbf4;
   }
 
 /*Pàgines de detall*/
